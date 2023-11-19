@@ -3,7 +3,6 @@ import * as TelegramBot from 'node-telegram-bot-api';
 import { HistoryService } from '../history/history.service';
 import * as dotenv from 'dotenv';
 dotenv.config();
-
 const TOKEN = process.env.TELEGRAM_TOKEN;
 
 @Injectable()
