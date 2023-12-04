@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { TelegramModule } from './modules/telegram/telegram.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost:3002'), TelegramModule],
+  imports: [MongooseModule.forRoot('mongodb://mongo:27017'), TelegramModule],
   controllers: [AppController],
   providers: [AppService],
 })
